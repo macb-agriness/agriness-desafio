@@ -1,17 +1,12 @@
-import { BadRequestException, Inject, Injectable, NotFoundException } from "@nestjs/common";
+import { BadRequestException, Injectable, NotFoundException } from "@nestjs/common";
 import { LoteRepository } from "./lote.repository";
 import { LoteEntity } from "./lote.entity";
 import { AnimalEntity } from "../animal/animal.entity";
-import { Cache } from 'cache-manager';
-import { CACHE_MANAGER } from "@nestjs/cache-manager";
 
 @Injectable()
 export class LoteService {
 
-  constructor(
-    private loteRepository: LoteRepository,
-    @Inject(CACHE_MANAGER) private cacheManager: Cache
-  ) {}
+  constructor(private loteRepository: LoteRepository) {}
 
   /**
    Serviço para registrar um lote na aplicação
@@ -57,18 +52,6 @@ export class LoteService {
     )
   }
 
-  // /**
-  //  * Serviço que verifica se um animal está registrado ou não na aplicação
-  //  */
-  // async exists(key: any){
-  //
-  //   if (typeof key === 'number') {
-  //     return !!await this.animalRepository.findByCodigo(key)
-  //   } else if (typeof key === 'string') {
-  //     return !!await this.animalRepository.findByNome(key)
-  //   }
-  //   return false;
-  // }
 
   /**
    Serviço que retorna todos os lotes registrados na aplicação

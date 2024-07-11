@@ -28,11 +28,10 @@ Aplicação baseada no [Nest](https://github.com/nestjs/nest) para o desafio DEV
 
 ## Instalação
 
-A aplicação é estruturada pelo Docker Compose. Dessa forma, é necessário possuir na máquina de destino o Docker e o Docker Compose instalados. 
+A aplicação é estruturada pelo Docker Compose. Dessa forma, é necessário possuir na máquina de destino o [Docker](https://redis.io/insight/) e o Docker Compose instalados. 
 Em ambientes Windows, o Docker Compose é instalado automaticamente quando da instalação do Docker. Usuários Linux precisam instalá-lo separadamente. 
 
-É recomendada a instalação do RedisInsight para facilitar a visualização e análise dos dados armazenados em cache
-
+É recomendada a instalação do [RedisInsight](https://redis.io/insight/) para facilitar a visualização e análise dos dados armazenados em cache.
 
 ## Executando a aplicação
 

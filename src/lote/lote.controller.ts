@@ -110,7 +110,7 @@ export class LoteController {
 
     let codigoAnimalArray = [];
 
-    if(lote.animais){
+    if(lote && lote.animais){
       codigoAnimalArray = lote.animais.map(animal => animal.codigo)
     }
     return new LoteResponseDto(lote.codigo, lote.nome, codigoAnimalArray)

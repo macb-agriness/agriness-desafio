@@ -22,51 +22,25 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Descrição
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Aplicação baseada no [Nest](https://github.com/nestjs/nest) para o desafio DEV NestJS da Agriness
 
-## Installation
+## Instalação
 
-```bash
-$ npm install
-```
+A aplicação é estruturada pelo Docker Compose. Dessa forma, é necessário possuir na máquina de destino o Docker e o Docker Compose instalados. 
+Em ambientes Windows, o Docker Compose é instalado automaticamente quando da instalação do Docker. Usuários Linux precisam instalá-lo separadamente. 
 
-## Running the app
+É recomendada a instalação do RedisInsight para facilitar a visualização e análise dos dados armazenados em cache
 
-```bash
-# development
-$ npm run start
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
+## Executando a aplicação
 
 ```bash
-# unit tests
-$ npm run test
+# o comando abaixo instalará todas as dependências necessárias para a aplicação, incluindo o Redis
+$ docker-compose up --build        
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
